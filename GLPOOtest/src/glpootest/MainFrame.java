@@ -34,12 +34,11 @@ public class MainFrame extends JFrame {
 		
 		//Add Swing components to content pane
 		Container c = getContentPane();
-		
-;
 		c.add(b1,BorderLayout.SOUTH);
 		c.add(detailsPanel, BorderLayout.EAST);
 		
-		jl.setIcon(new ImageIcon("/Users/Maxime.max/workspace/glpootest/src/Images/a8e47331ef52fcf838071050a0240d7e_large.jpeg"));
+		ImageIcon fond = new ImageIcon( getClass().getResource("/Images/a8e47331ef52fcf838071050a0240d7e_large.jpeg"));
+		jl.setIcon(fond);
 		jp.add(jl);
 		
 		
