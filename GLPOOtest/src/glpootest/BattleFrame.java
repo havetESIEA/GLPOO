@@ -17,7 +17,7 @@ class BattleFrame extends JFrame {
 	private DetailsPanelBattle detailsPanelBattle;
 	JPanel jp = new JPanel();
 	JLabel jl = new JLabel();
-
+	
 	
 	
 	public BattleFrame(String title){
@@ -38,9 +38,8 @@ class BattleFrame extends JFrame {
 ;
 		c.add(b5,BorderLayout.SOUTH);
 		c.add(detailsPanelBattle, BorderLayout.EAST);
-		
-		jl.setIcon(new ImageIcon("/Users/Maxime.max/workspace/glpootest/src/Images/a8e47331ef52fcf838071050a0240d7e_large.jpeg"));
-		jp.add(jl);
+		ImageIcon img = new ImageIcon( getClass().getResource("/Images/a8e47331ef52fcf838071050a0240d7e_large.jpeg"));
+		jl.setIcon(img);
 		
 		
 		add(jp);
