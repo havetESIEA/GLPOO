@@ -35,13 +35,12 @@ class BattleFrame extends JFrame {
 		//Add Swing components to content pane
 		Container c = getContentPane();
 		
-;
 		c.add(b5,BorderLayout.SOUTH);
 		c.add(detailsPanelBattle, BorderLayout.EAST);
 		ImageIcon img = new ImageIcon( getClass().getResource("/Images/a8e47331ef52fcf838071050a0240d7e_large.jpeg"));
 		jl.setIcon(img);
 		
-		
+		add(jl);
 		add(jp);
 		validate();
 		
